@@ -5,21 +5,21 @@ It is designed to support students, educators, and AI copilots studying **Core A
 
 ---
 
-## 📘 About this project
+## About this project
 
 The HTML page [`core-area-2-python-examples.html`](core-area-2-python-examples.html) contains:
 
-- ✅ All required Python commands from the official specification  
-- ✅ Short, clear explanations in plain English  
-- ✅ Runnable example code written for Python 3.10+  
-- ✅ Inline `# Output:` comments to demonstrate expected results  
-- ✅ Simple structure for use in chatbots, copilots, and digital learning systems  
+- All required Python commands from the official specification  
+- Short, clear explanations in plain English  
+- Runnable example code written for Python 3.10+  
+- Inline `# Output:` comments to demonstrate expected results  
+- Simple structure for use in chatbots, copilots, and digital learning systems  
 
 The examples strictly follow the approved Appendix 2 command set and **do not include any external libraries or syntax** beyond those listed in the specification.
 
 ---
 
-## 🧩 Contents by category
+## Contents by category
 
 1. Input, Output, and Type Conversion  
 2. Selection (`if`, `elif`, `else`, `match case`)  
@@ -34,7 +34,7 @@ The examples strictly follow the approved Appendix 2 command set and **do not in
 
 ---
 
-## 🚀 Usage
+## Usage
 
 ### View locally
 1. Clone or download this repository.  
@@ -47,7 +47,7 @@ The examples strictly follow the approved Appendix 2 command set and **do not in
 
 ---
 
-## 🧠 Learning objectives
+## Learning objectives
 
 Learners will:
 - Understand how each Python command works in context.  
@@ -65,7 +65,7 @@ See the official source:
 
 ---
 
-## ⚖️ Licence
+## Licence
 
 This resource is released under the [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/) licence.  
 You are free to share and adapt it for educational use, provided attribution to the original Pearson specification and this repository is maintained.
