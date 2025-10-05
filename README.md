@@ -7,7 +7,7 @@ It is designed to support students, educators, and AI copilots studying **Core A
 
 ## About this project
 
-The HTML page [`core-area-2-python-examples.html`](core-area-2-python-examples.html) contains:
+The HTML page [`core-area-2-python-examples.html`](index.html) contains:
 
 - All required Python commands from the official specification  
 - Short, clear explanations in plain English  
