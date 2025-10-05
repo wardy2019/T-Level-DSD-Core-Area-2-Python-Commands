@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>T Level DSD – Core Area 2: Python Examples</title>
+<meta name="description" content="Practical examples for every Python command in Appendix 2 of the T Level Digital Software Development specification.">
+<style>
+  body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Arial,sans-serif;background:#fff;color:#0f172a;line-height:1.6;margin:0}
+  header{background:#2563eb;color:#fff;padding:1.5rem}
+  header h1{margin:0;font-size:1.5rem}
+  main{max-width:960px;margin:0 auto;padding:1rem}
+  h2{border-bottom:2px solid #e2e8f0;padding-bottom:.3rem;margin-top:2rem;color:#1e3a8a}
+  h3{margin-top:1.2rem;color:#0f172a}
+  pre{background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:.75rem;overflow-x:auto}
+  code{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+  .desc{color:#475569;font-size:.95rem;margin-top:-.3rem;margin-bottom:.5rem}
+  footer{margin-top:2rem;padding:1rem 0;border-top:1px solid #e2e8f0;font-size:.9rem;color:#475569}
+</style>
+</head>
+<body>
+<header>
+  <h1>T Level DSD – Core Area 2: Python Examples</h1>
+  <p>Friendly code snippets aligned with Appendix 2 of the T Level Digital Software Development Specification (v1.0 – May 2025)</p>
+</header>
+<main>
+<section id="io">
+  <h2>Input, Output, and Type Conversion</h2>
+
+  <h3>input()</h3>
+  <p class="desc">Reads a value typed by the user as a string.</p>
+  <pre><code>name = input("Enter your name: ")
+print("Hello, " + name)  # Output: Hello, Alex</code></pre>
+
+  <h3>print()</h3>
+  <p class="desc">Displays text or variables on screen.</p>
+  <pre><code>points = 10
+print("You scored", points, "points")  # Output: You scored 10 points</code></pre>
+
+  <h3>int(), float(), str(), bool()</h3>
+  <p class="desc">Convert between data types.</p>
+  <pre><code>age = int("18")
+height = float("1.75")
+text = str(123)
+is_ready = bool(1)
+print(age, height, text, is_ready)  # Output: 18 1.75 123 True</code></pre>
+</section>
+
+<section id="selection">
+  <h2>Selection</h2>
+
+  <h3>if, elif, else</h3>
+  <p class="desc">Run different code depending on a condition.</p>
+  <pre><code>score = 72
+if score >= 80:
+    print("Distinction")
+elif score >= 60:
+    print("Merit")
+else:
+    print("Pass")  # Output: Merit</code></pre>
+
+  <h3>match case</h3>
+  <p class="desc">Matches one value against fixed cases (Python 3.10+).</p>
+  <pre><code>grade = "B"
+match grade:
+    case "A":
+        print("Excellent")
+    case "B":
+        print("Good")
+    case _:
+        print("Needs improvement")  # Output: Good</code></pre>
+</section>
+
+<section id="iteration">
+  <h2>Iteration</h2>
+
+  <h3>for</h3>
+  <p class="desc">Repeats actions a known number of times.</p>
+  <pre><code>for i in range(3):
+    print("Loop", i)  
+# Output:
+# Loop 0
+# Loop 1
+# Loop 2</code></pre>
+
+  <h3>while</h3>
+  <p class="desc">Repeats actions while a condition is true.</p>
+  <pre><code>count = 0
+while count < 3:
+    print("Counting:", count)
+    count += 1
+# Output:
+# Counting: 0
+# Counting: 1
+# Counting: 2</code></pre>
+</section>
+
+<section id="functions">
+  <h2>Functions</h2>
+
+  <h3>def</h3>
+  <p class="desc">Defines reusable blocks of code.</p>
+  <pre><code>def add(a, b):
+    return a + b
+
+print(add(3, 5))  # Output: 8</code></pre>
+</section>
+
+<section id="standard-libraries">
+  <h2>Standard Libraries</h2>
+
+  <h3>import math</h3>
+  <p class="desc">Use mathematical functions and constants.</p>
+  <pre><code>import math
+print(math.sqrt(16))   # Output: 4.0
+print(math.pi)         # Output: 3.141592653589793</code></pre>
+
+  <h3>import random</h3>
+  <p class="desc">Generate random numbers.</p>
+  <pre><code>import random
+print(random.randint(1, 6))  # Output: random int between 1 and 6
+print(random.random())       # Output: random float between 0 and 1</code></pre>
+</section>
+
+<section id="built-in">
+  <h2>Built-in Functions</h2>
+
+  <h3>range()</h3>
+  <p class="desc">Creates a sequence of numbers, often used in loops.</p>
+  <pre><code>for n in range(1, 4):
+    print(n)
+# Output: 1 2 3</code></pre>
+
+  <h3>len(), max(), min(), round()</h3>
+  <p class="desc">Return length, largest, smallest, and rounded values.</p>
+  <pre><code>nums = [4, 7, 2]
+print(len(nums))   # Output: 3
+print(max(nums))   # Output: 7
+print(min(nums))   # Output: 2
+print(round(3.1416, 2))  # Output: 3.14</code></pre>
+
+  <h3>chr(), ord()</h3>
+  <p class="desc">Convert between characters and ASCII codes.</p>
+  <pre><code>print(chr(65))  # Output: A
+print(ord('A')) # Output: 65</code></pre>
+</section>
+
+<section id="strings">
+  <h2>String Handling</h2>
+
+  <h3>upper(), lower(), isalpha(), isdigit()</h3>
+  <p class="desc">Change case or check content of strings.</p>
+  <pre><code>word = "Hello"
+print(word.upper())   # Output: HELLO
+print(word.isalpha()) # Output: True
+print("123".isdigit())# Output: True</code></pre>
+
+  <h3>find(), replace(), split(), strip(), format()</h3>
+  <p class="desc">Locate, modify and tidy strings.</p>
+  <pre><code>text = "apple, banana, cherry"
+print(text.find("banana"))     # Output: 7
+print(text.replace("banana","orange"))  # Output: apple, orange, cherry
+print(text.split(", "))        # Output: ['apple','banana','cherry']
+print("  spaced  ".strip())    # Output: spaced
+print("Hello {}".format("World"))  # Output: Hello World</code></pre>
+</section>
+
+<section id="data-structures">
+  <h2>Data Structures</h2>
+
+  <h3>Lists</h3>
+  <p class="desc">Store ordered collections of items.</p>
+  <pre><code>fruits = ["apple", "banana"]
+fruits.append("cherry")
+print(fruits[1])  # Output: banana
+print(len(fruits)) # Output: 3</code></pre>
+
+  <h3>Dictionaries</h3>
+  <p class="desc">Store key-value pairs.</p>
+  <pre><code>person = {"name": "Alex", "age": 20}
+print(person["name"])  # Output: Alex</code></pre>
+</section>
+
+<section id="files">
+  <h2>Text Files</h2>
+
+  <p class="desc">Open, write, read and close files safely.</p>
+  <pre><code># Write to a file
+file = open("example.txt", "w")
+file.write("Hello File!")
+file.close()
+
+# Read from the file
+file = open("example.txt", "r")
+print(file.read())  # Output: Hello File!
+file.close()</code></pre>
+</section>
+
+<section id="datetime">
+  <h2>Dates and Times</h2>
+
+  <p class="desc">Work with current date and time.</p>
+  <pre><code>from datetime import datetime
+now = datetime.now()
+print(now.strftime("%Y-%m-%d"))  # Output: 2025-10-05
+# Convert string back to datetime
+dt = datetime.strptime("2025-10-05", "%Y-%m-%d")
+print(dt.year)  # Output: 2025</code></pre>
+</section>
+
+<footer>
+  <p>© 2025 T Level Digital Software Development reference. For educational and knowledge‑base use only.</p>
+</footer>
+</main>
+</body>
+</html>
